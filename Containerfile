@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:0.117.2
+FROM homeassistant/home-assistant:0.118.2
 
 ENV LD_PRELOAD="/usr/local/lib/libjemalloc.so.2"
 
