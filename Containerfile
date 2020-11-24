@@ -8,6 +8,6 @@ RUN apk update \
     && pip3 install keyring keyrings.cryptfile \
     && adduser --home /config --uid 1000 --disabled-password hass \
     && apk del .build-deps \
-    && sed '/^exec.*/i s6-setuidgid hass' -i /etc/services.d/home-assistant/run # Run as hass user
+    && sed 's/^exec\(.*\)/s6-setuidgid hass\1/' -i /etc/services.d/home-assistant/run # Run as hass user
 
 COPY root /
