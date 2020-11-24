@@ -1,0 +1,2 @@
+/config true hass 0600 0700
+/etc/init-secrets true hass 0600 0700
