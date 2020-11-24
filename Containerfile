@@ -1,6 +1,6 @@
 FROM homeassistant/home-assistant:0.118.2
 
-ENV LD_PRELOAD="/usr/local/lib/libjemalloc.so.2"
+ENV HOME="/config" LD_PRELOAD="/usr/local/lib/libjemalloc.so.2"
 
 RUN apk update \
     && apk add tmux \
