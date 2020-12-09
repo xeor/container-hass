@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:0.118.2
+FROM homeassistant/home-assistant:0.118.5
 
 RUN apk update \
     && apk add tmux gnupg \
