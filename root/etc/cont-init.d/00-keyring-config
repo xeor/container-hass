@@ -1,7 +1,0 @@
-#!/usr/bin/with-contenv sh
-
-mkdir -p /config/.local/share/python_keyring &> /dev/null
-
-echo -e "[backend]\ndefault-keyring=keyrings_custom_cryptfile.CryptFilePwFileDelete\n" > /config/.local/share/python_keyring/keyringrc.cfg
-
-chown -R hass /config/.local
