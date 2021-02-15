@@ -1,4 +1,4 @@
-FROM homeassistant/home-assistant:2020.12.0
+FROM homeassistant/home-assistant:2021.2.3
 
 RUN apk update \
     && apk add gnupg \
